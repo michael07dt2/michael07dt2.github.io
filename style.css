@@ -1,3 +1,7 @@
 body {
     background-color: #676767; /* 다크 그레이 색상 */
 }
+
+.w-full {
+    width: 100%;
+}

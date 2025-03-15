@@ -13,6 +13,14 @@
 </head>
 <body>
     <div>
+        <div id="overlay"></div>
+        <div id="contactPopup">
+            <button class="close-btn" onclick="togglePopup()">X</button>
+            <h2>Contact Us</h2>
+            <p>Email: example@email.com</p>
+            <p>Phone: 010-1234-5678</p>
+        </div>
+
         <header class="fixed flex w-full items-center justify-between left-0 top-0">
             <div>
                 It's Minkyu
@@ -20,7 +28,7 @@
             <ui class="flex">
                 <li class="ml-4 flex cursor-pointer">Home</li>
                 <li class="ml-4 flex cursor-pointer">Project</li>
-                <li class="ml-4 flex cursor-pointer">Contact</li>
+                <li id="contactBtn" class="ml-4 flex cursor-pointer">Contact</li>
             </ui>
         </header>
         <main>
@@ -34,6 +42,8 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/6Y8PpdMb6BI?si=X6kvVsDN4dvw8IYq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         </main>
+        
+        <script src="script.js"></script>
     </div>
 </body>
 </html>

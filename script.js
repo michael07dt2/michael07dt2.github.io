@@ -17,3 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("contactBtn").addEventListener("click", togglePopup);
     document.getElementById("overlay").addEventListener("click", togglePopup); // ✅ 추가됨
 });
+
+//emailJS
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // 기본 폼 제출 방지
+
+    emailjs.sendForm("service_mygit", "template_heytlx7", this, "KIGbMSVc7WdPXu89H")
+        .then(function(response) {
+            alert("메일이 성공적으로 전송되었습니다!");
+        }, function(error) {
+            alert("메일 전송 실패: " + error.text);
+        });
+});

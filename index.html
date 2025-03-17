@@ -17,15 +17,31 @@
         <div id="contactPopup">
             <button class="close-btn" onclick="togglePopup()">X</button>
             <h2>Contact Us</h2>
-            <<!-- 
+            <!-- 
             <p>Email: example@email.com</p>
             <p>Phone: 010-1234-5678</p>
-            -->>
+            -->
             <form id="contactForm">
-                <label>이름: <input type="text" name="name" required></label><br>
-                <label>이메일: <input type="email" name="email" required></label><br>
-                <label>전화번호: <input type="tel" name="phone"></label><br>
-                <label>내용: <input type="text" name="message"></label><br>
+                <label>
+                    <span>이름: </span>
+                    <input type="text" name="name" required>
+                </label><br>
+                
+                <label>
+                    <span>이메일: </span>
+                    <input type="email" name="email" required>
+                </label><br>
+                
+                <label>
+                    <span>전화번호: </span>
+                    <input type="tel" name="phone">
+                </label><br>
+                
+                <label>
+                    <span>내용: </span>
+                    <input type="text" name="message">
+                </label><br>
+                
                 <button type="submit">Submit</button>
             </form>
             

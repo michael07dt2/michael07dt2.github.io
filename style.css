@@ -117,6 +117,7 @@ a.no-underline {
     overflow: hidden;
     max-width: 100%;
     background: #000;
+    z-index: 1;
 }
 
 .responsive-iframe-container iframe {

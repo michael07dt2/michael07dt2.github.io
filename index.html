@@ -19,6 +19,18 @@
             <h2>Contact Us</h2>
             <p>Email: example@email.com</p>
             <p>Phone: 010-1234-5678</p>
+
+            <form id="contactForm">
+                <label>이름: <input type="text" name="name" required></label><br>
+                <label>이메일: <input type="email" name="email" required></label><br>
+                <label>전화번호: <input type="tel" name="phone"></label><br>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+            <script>
+                emailjs.init("KIGbMSVc7WdPXu89H"); // EmailJS 초기화
+            </script>
         </div>
 
         <header class="fixed flex w-full items-center justify-between left-0 top-0">
@@ -31,6 +43,7 @@
                 <li id="contactBtn" class="ml-4 flex cursor-pointer">Contact</li>
             </ui>
         </header>
+        
         <main>
             <section>
                 <div class="container pt-10">
@@ -38,6 +51,7 @@
                     <A href = "https://github.com/michael07dt2/michael07dt2.github.io" target="_blank" > Repository는 여기 </A>
                 </div>
             </section>
+            
             <section>
                 <div class="container pt-10">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/6Y8PpdMb6BI?si=X6kvVsDN4dvw8IYq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

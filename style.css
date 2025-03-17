@@ -27,6 +27,12 @@ label {
     margin-bottom: 10px;
 }
 
+label span {
+    width: 80px; /* 라벨(이름, 이메일, 전화번호, 내용) 고정 너비 */
+    text-align: right; /* 텍스트 오른쪽 정렬 */
+    margin-right: 10px; /* 입력 필드와 간격 조정 */
+}
+
 input {
     flex-grow: 1; /* 입력 필드가 자동 확장 */
     margin-left: 10px; /* 라벨과 입력 필드 간격 */

@@ -1,9 +1,9 @@
 body {
-    background-color: #676767;
+    background-color: #212121;
 }
 
 header {
-    background-color: rgba(66, 66, 66, 0.5);
+    background-color: rgba(17, 17, 17, 0.5);
     font-size: .875rem;
     height: 50px;
     line-height: 1.25rem;
@@ -102,6 +102,10 @@ a.no-underline {
     margin-left: 1rem;
 }
 
+.mb-20 {
+    margin-bottom: 5rem
+}
+
 .top-0 {
     top: 0;
 }
@@ -139,6 +143,20 @@ a.no-underline {
     border: 1px solid black;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 100;
+}
+
+a, li, div {
+    color: #FFFFFF; /* 기본 텍스트 색상 */
+}
+
+.description {
+    font-size: 14px;
+    color: #777777;
+}
+
+.download-box {
+    display: flex;
+    flex-direction: column;
 }
 
 .github-css-updater {}

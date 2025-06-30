@@ -161,6 +161,16 @@ a, li, div {
 .download-box {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2.5rem;
+}
+
+.download-box a {
+    /* 기본적으로 <a> 태그는 인라인 요소이지만, 필요에 따라 display를 조정 */
+    display: inline-block; /* 인라인처럼 행동하지만 너비/높이 설정 가능 */
+    /* 또는 display: block; 과 함께 max-content 등으로 너비 제한 */
+    width: max-content; /* 내용물 너비만큼만 차지하도록 설정 */
+    /* 또는 width: fit-content; 도 유사하게 작동 */
+    /* 기타 필요한 스타일 (예: padding, margin 등) */
 }
 
 .github-css-updater {}
